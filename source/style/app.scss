@@ -1,5 +1,11 @@
-body {
-  margin: 0;
-}
+$white : #efeee9;
+$beige: #eeebdf;
+$main-font-color : #373e42;
 
-@import 'common/greating';
+//layout setups
+@import "layout/setups";
+@import "layout/fonts";
+
+
+
+
