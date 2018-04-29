@@ -9,16 +9,11 @@ module.exports = function(){
                 title: 'Style'
             }))
             .pipe($.gp.autoprefixer({
-                browsers: [
-                    'last 3 version',
-                    '> 1%',
-                    'ie 8',
-                    'ie 9',
-                    'Opera 12.1'
-                ]
+                browsers: $.config.autoprefixerConfig
             }))
             .pipe($.gp.sourcemaps.write())
-            .pipe($.gulp.dest('./build/assets/css'))
+            .pipe($.gulp.dest($.config.root + '/assets/css'))
+            .pipe($.browserSync.stream());
     });
 };
 
