@@ -1,6 +1,6 @@
 'use strict';
 
-//Use global for all modules
+//Global variables
 global.$ = {
     package: require('./package.json'),
     config: require('./gulp/config'),
@@ -22,6 +22,7 @@ $.path.task.forEach(function(taskPath){
     require(taskPath)();
 });
 
+//Default task
 $.gulp.task('default', $.gulp.series(
     'clean',
     $.gulp.parallel(
