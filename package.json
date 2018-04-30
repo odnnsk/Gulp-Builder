@@ -1,5 +1,5 @@
 {
-  "name": "Gulp Builder",
+  "name": "gulp_builder",
   "version": "1.0.0",
   "description": "Gulp Builder",
   "main": "index.js",
