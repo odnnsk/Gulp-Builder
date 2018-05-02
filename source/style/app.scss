@@ -3,8 +3,12 @@ $beige: #eeebdf;
 $main-font-color : #373e42;
 
 //layout setups
-@import "layout/setups";
 @import "layout/fonts";
+@import "layout/setups";
+
+
+//blocks
+@import "blocks/**/*";
 
 
 
